@@ -16,16 +16,24 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
 function removeSmallest(numbers) {
-  let minNum = 0;
+  const result = numbers.slice(0);
 
-  for (let i = 0; i <= numbers.length; i++) {
-    if (numbers[i + 1] < numbers[i]) {
-      minNum = i + 1;
-    }
-  }
-  numbers.splice(minNum, 1);
-  return numbers;
+  let smallestValue = numbers.indexOf(Math.min(...numbers));
+  result.splice(smallestValue, 1);
+  return result;
 }
 
 console.log(removeSmallest([1, 2, 3, 4, 5]));
 console.log(removeSmallest([2, 3, 1, 4, 5]));
+
+// function removeSmallest(numbers) {
+//     let minNum = 0;
+
+//     for (let i = 0; i <= numbers.length; i++) {
+//       if (numbers[i + 1] < numbers[i]) {
+//         minNum = i + 1;
+//       }
+//     }
+//     numbers.splice(minNum, 1);
+//     return numbers;
+//   }
