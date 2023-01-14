@@ -30,5 +30,13 @@ console.log(
     [10, 0],
     [3, 5],
     [5, 8],
-  ])
+  ]) // 5
 );
+
+// var number = function(busStops){
+//   let peopleInBus = 0;
+//   busStops.forEach(([enter, left]) => {
+//     peopleInBus += enter - left;
+//   })
+//   return peopleInBus
+// }
