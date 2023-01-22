@@ -27,3 +27,7 @@ const isSquare = function (n) {
 
 console.log(isSquare(-1));
 console.log(isSquare(34));
+
+// function isSquare(n) {
+//     return Math.sqrt(n) % 1 === 0;
+//   }
