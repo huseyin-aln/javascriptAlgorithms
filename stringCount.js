@@ -25,5 +25,7 @@ function strCount(str, letter) {
 //     return str.split(letter).length-1
 // }
 
+// const strCount = (str, letter) =>  str.split('').filter(x => x === letter).length
+
 console.log(strCount("Hello", "o")); // 1
 console.log(strCount("Hello", "l")); // 2
